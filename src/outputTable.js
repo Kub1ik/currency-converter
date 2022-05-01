@@ -20,41 +20,6 @@ const OutputTable = (props) => {
                         </tr>
                     )
                 })}
-                {/* <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr>
-                <tr>
-                    <td className="code">EUR</td>
-                    <td className="amount">1000</td>
-                    <td className="rate">12.3456</td>
-                </tr> */}
             </tbody>
         </table>
     )

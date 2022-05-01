@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import CurrenciesOptionMenu from "./currenciesOptionMenu";
 import OutputTable from "./outputTable";
+import Styles from "./styles/converter.module.scss";
 
 const Converter = () => {
     const ACCESS_KEY = "2fefc3ea4b76c4ae65313c49f49ed92d";
@@ -95,33 +96,33 @@ const Converter = () => {
     }
 
     return (
-        <section className="currency-converter">
+        <section className={Styles["currency-converter"]}>
             <h1>Currency Converter</h1>
-            <p className="instructions">
+            <p className={Styles["instructions"]}>
                 If you wnat to see latest convertion rates of a currency, select desired code of currency in the first selection menu 
                 and you will get table of rates of all available currencies. If you want to see latest convertion rate of a currency 
                 to a certain other currency, choose desired currencies in both selection menus.
             </p>
             {currencyOptionsLoaded ?
                 <>
-                    <div className="selection-menu-container">
+                    <div className={Styles["selection-menu-container"]}>
                         <CurrenciesOptionMenu
                             id="from"
                             currencyOptions={Object.entries(currencyOptions)}
                             getSelectedCurrency={getSelectedCurrency}
                         />
-                        {renderWarning && <small className="warning">Please select currency in the frist selection menu</small>}
+                        {renderWarning && <small className={Styles["warning"]}>Please select currency in the frist selection menu</small>}
                     </div>
-                    <div className="selection-menu-container">
+                    <div className={Styles["selection-menu-container"]}>
                         <CurrenciesOptionMenu
                             id="to"
                             currencyOptions={Object.entries(currencyOptions)}
                             getSelectedCurrency={getSelectedCurrency}
                         />
-                        <small className="hint">Optional</small>
+                        <small className={Styles["hint"]}>Optional</small>
                     </div>
 
-                    <button className="convertion-button" onClick={getConvertionRate}>get convertion rate</button>
+                    <button className={Styles["convertion-button"]} onClick={getConvertionRate}>get convertion rate</button>
 
                     <hr />
 

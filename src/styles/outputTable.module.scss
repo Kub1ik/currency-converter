@@ -1,0 +1,71 @@
+.output-table {        
+    width: 100%;
+    max-width: 400px;
+
+    thead {
+        color: #74009C;
+        background-color: #BDADEA;
+
+        th {
+            padding: 0.5rem 0;
+        }
+
+        .code-head {
+            max-width: 50px;
+        }
+    }
+
+    tbody {
+        color: #74009C;
+        background-color: #9EB3C2;
+
+        td {
+            padding: 0.5rem;
+            overflow-x: auto;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #B6D9F1;
+        }
+
+        tr:hover {
+            background-color: #BDADEA;
+        }
+
+        .code {
+            max-width: 55px;
+        }
+
+        .amount, .rate {
+            text-align: right;
+        }
+
+        .amount {
+            max-width: 76px;
+        }
+
+        .rate {
+            max-width: 150px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        grid-column: 1 / span 2;
+        max-width: 600px;
+        
+        tbody {
+            .code {
+                width: 150px;
+                max-width: none;
+            }
+
+            .amount {
+                max-width: 100px;
+            }
+
+            .rate {
+                max-width: max-content;
+            }
+        }
+    }
+}

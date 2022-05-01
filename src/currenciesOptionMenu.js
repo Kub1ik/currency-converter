@@ -1,5 +1,7 @@
 import React from "react";
 
+import Styles from  "./styles/currenciesOptionMenu.module.scss";
+
 const CurrenciesOptionMenu = (props) => {
     const options = props.currencyOptions.map(([key, value]) => {
         return (
@@ -15,7 +17,7 @@ const CurrenciesOptionMenu = (props) => {
 
     return (
         <select 
-            className="option-menu"
+            className={Styles["option-menu"]}
             name='currencies'
             defaultValue={options[0]}
             onChange={(event) => props.getSelectedCurrency(event.target.value, props.id)}

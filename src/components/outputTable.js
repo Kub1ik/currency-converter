@@ -1,6 +1,6 @@
 import React from "react";
 
-import Styles from "./styles/outputTable.module.scss";
+import Styles from "../styles/outputTable.module.scss";
 
 const OutputTable = (props) => {
     return (

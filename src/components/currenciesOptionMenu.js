@@ -1,6 +1,6 @@
 import React from "react";
 
-import Styles from  "./styles/currenciesOptionMenu.module.scss";
+import Styles from  "../styles/currenciesOptionMenu.module.scss";
 
 const CurrenciesOptionMenu = (props) => {
     const options = props.currencyOptions.map(([key, value]) => {

@@ -1,11 +1,13 @@
+@import "colors.scss";
+
 .option-menu {
     width: 100%;
     max-width: 400px;
     padding: 0.7rem;
     margin-top: 1rem;
 
-    color: #74009C;
-    background-color: #9EB3C2;
+    color: $dark-purple;
+    background-color: $light-blue;
     font-weight: bold;
     font-size: 1rem;
     text-transform: capitalize;

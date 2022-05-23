@@ -1,0 +1,59 @@
+@import "mixins.scss";
+@import "colors.scss";
+
+.body {
+    @include body-mobile();
+
+    h1 {
+        @include styled-h1();
+    }
+
+    p {
+        margin-bottom: 1rem;
+        max-width: 400px;
+    }
+    
+    .link {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+
+        @include styled-button();
+    }
+
+    img {
+        display: block;
+        margin: 2rem auto;
+    }
+
+    .attribute {
+        a {
+            color: $light-blue;
+        }
+    }
+
+    @media (min-width: 768px) {
+        @include body-desktop();
+        grid-template-rows: 5rem 5rem 5rem auto 4rem;
+
+        h1 {
+            grid-column: 1 / span 2;
+        }
+
+        p {
+            grid-column: 1 / span 2;
+            max-width: none;
+        }
+
+        img {
+            grid-column: 1 / span 2;
+            width: 450px;
+            height: auto;
+        }
+
+        .attribute {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+    }
+}

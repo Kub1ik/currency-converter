@@ -1,0 +1,54 @@
+@import "colors.scss";
+
+@mixin body-mobile() {
+    background-color: $dark-grey;
+    color: $light-purple;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+@mixin body-desktop() {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-column-gap: 1rem;
+    justify-content: center;
+}
+
+@mixin styled-h1() {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+@mixin styled-button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    max-width: 400px;
+
+    color: $dark-grey;
+    background-color: $light-purple;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
+
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $dark-purple;
+        color: $light-blue;
+        text-decoration: underline;
+    }
+}

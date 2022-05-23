@@ -1,0 +1,64 @@
+@import "colors.scss";
+
+.header {
+    background-color: $dark-grey;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    nav {
+        li {
+            list-style: none;
+            padding-left: unset;
+            text-align: center;
+            border-bottom: 1px solid $light-blue;
+
+            a {
+                text-decoration: none;
+                color: $light-blue;
+                font-weight: bold;
+                display: block;
+                padding: 0.7rem 0;
+
+                &:hover {
+                    text-decoration: underline;
+                    background-color: $dark-purple;
+                }
+            }
+        }
+
+        li:nth-child(1) {
+            border-top: 1px solid $light-blue;
+        }
+    }
+
+    @media (min-width: 768px) {
+        nav {
+            border-top: 1px solid $light-blue;
+            border-bottom: 1px solid $light-blue;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                max-width: 616px;
+                margin: auto;
+
+                li {
+                    border-bottom: none;
+                    border-right: 2px solid $light-blue;
+                    width: 33.3%;
+
+                    a {
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+                    }
+                }
+
+                li:nth-child(1) {
+                    border-top: none;
+                    border-left: 2px solid $light-blue;
+                }
+            }
+        }
+    }
+}

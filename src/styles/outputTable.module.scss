@@ -1,10 +1,12 @@
+@import "colors.scss";
+
 .output-table {        
     width: 100%;
     max-width: 400px;
 
     thead {
-        color: #74009C;
-        background-color: #BDADEA;
+        color: $dark-purple;
+        background-color: $light-purple;
 
         th {
             padding: 0.5rem 0;
@@ -16,8 +18,8 @@
     }
 
     tbody {
-        color: #74009C;
-        background-color: #9EB3C2;
+        color: $dark-purple;
+        background-color: $light-blue;
 
         td {
             padding: 0.5rem;
@@ -29,7 +31,7 @@
         }
 
         tr:hover {
-            background-color: #BDADEA;
+            background-color: $light-purple;
         }
 
         .code {

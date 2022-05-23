@@ -1,9 +1,4 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 95vh;
-}
+@import "colors.scss";
 
 .footer {
     text-align: center;
@@ -12,8 +7,8 @@
     margin: auto;
 
     p {
-        background-color: #171614;
-        color: #BDADEA;
+        background-color: $dark-grey;
+        color: $light-purple;
         padding: 1rem 0;
         max-width: 1024px;
         margin: auto;

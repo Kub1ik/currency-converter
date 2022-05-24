@@ -20,7 +20,7 @@ You can run the application in:
 
 ### Development mode
 
-    npm run
+    npm start
 
 ### Production mode
 
